@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstonProject", "AstonProject.csproj", "{2D856D9A-9CF8-4A8A-BA0F-63336528D490}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstonProject.Tests", "AstonProject.Tests\AstonProject.Tests.csproj", "{71948FEA-613E-4261-9473-BAD1718C0F93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D856D9A-9CF8-4A8A-BA0F-63336528D490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D856D9A-9CF8-4A8A-BA0F-63336528D490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D856D9A-9CF8-4A8A-BA0F-63336528D490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D856D9A-9CF8-4A8A-BA0F-63336528D490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71948FEA-613E-4261-9473-BAD1718C0F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71948FEA-613E-4261-9473-BAD1718C0F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71948FEA-613E-4261-9473-BAD1718C0F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71948FEA-613E-4261-9473-BAD1718C0F93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

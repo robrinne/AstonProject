@@ -75,6 +75,7 @@
   <ItemGroup>
     <Compile Include="Controllers\BlankController.cs" />
     <Compile Include="Controllers\ButtonsController.cs" />
+    <Compile Include="Controllers\FilQuestController.cs" />
     <Compile Include="Controllers\FlotController.cs" />
     <Compile Include="Controllers\FormsController.cs" />
     <Compile Include="Controllers\GridController.cs" />
@@ -257,6 +258,7 @@
     <Content Include="Views\Notifications\Index.cshtml" />
     <Content Include="Views\Panels\Index.cshtml" />
     <Content Include="Views\Typography\Index.cshtml" />
+    <Content Include="Views\FilQuest\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

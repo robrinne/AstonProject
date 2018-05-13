@@ -6,6 +6,7 @@
 }
 
 <div id="page-wrapper">
+    <h2 class="pt-10">Fil des questions</h2>
 
     @foreach (var item in Model)
     {
@@ -24,18 +25,16 @@
                         </div>
                     </div>
                     <!-- Fin header-->
-
                     <!-- Body -->
                     <div class="panel-body">
                         <!-- Question -->
                         <p>@Html.DisplayFor(modelItem => item.Quest)</p>
                         <!-- Fin qestion -->
-                        <!-- Réponse -->
+                        <!-- Réponse simple -->
                         <pre>@Html.DisplayFor(modelItem => item.Answer)</pre>
-                        <!-- Fin réponse -->
+                        <!-- Fin réponse simple-->
                     </div>
                     <!-- Fin body -->
-
                     <!-- Footer -->
                     <div class="panel-footer">
                         <div class="row">
@@ -57,14 +56,14 @@
                             </div>
                             <div class="col-md-4 text-center">
                                 <!-- Infos sur la question -->
-                                <a href="#" class="pr-10  text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
-                                    @Html.DisplayFor(modelItem => item.NbComment) @if (item.NbComment <= 1) {<span>commentaire</span> } else { <span>commentaires</span>}
+                                <a href="#" title="Nombre de commentaires" class="pr-10  text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
+                                    @Html.DisplayFor(modelItem => item.NbComment) <i class="fa fa-comments fa-fw"></i>
                                 </a>
-                                <a href="#" class="pr-10  text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
-                                    @Html.DisplayFor(modelItem => item.NbUsing) @if (item.NbUsing <= 1) {<span>utilisation</span> } else { <span>utilisations</span>}
-                                </a> 
-                                <a href="#" class="pr-10  text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
-                                    @Html.DisplayFor(modelItem => item.NbNote) @if (item.NbNote <= 1) {<span>note</span> } else { <span>notes</span>}
+                                <a href="#" title="Nombre d'utilisations de la question" class="pr-10  text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
+                                    @Html.DisplayFor(modelItem => item.NbUsing) <i class="fa fa-thumb-tack fa-fw"></i>
+                                </a>
+                                <a href="#" title="Nombre de notes" class="pr-10  text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
+                                    @Html.DisplayFor(modelItem => item.NbNote) <i class="fa fa-group fa-fw"></i>
                                 </a>
                                 <!-- Fin des infos sur la question -->
                             </div>

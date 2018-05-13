@@ -1,0 +1,82 @@
+﻿
+@model IEnumerable<AstonProject.Models.Question>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div id="page-wrapper">
+    <h2 class="pt-10">Mes questions</h2>
+
+    @foreach (var item in Model)
+    {
+        <div class="row pt-10">
+            <div class="col-md-12">
+                <div class="panel panel-@Html.DisplayFor(modelItem => item.Category.Color)">
+                    <!-- Header -->
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-md-8">
+                                @Html.DisplayFor(modelItem => item.Category.Name)
+                            </div>
+                            <div class="col-md-4 text-center">
+                                @Html.DisplayFor(modelItem => item.Note)/20<i class="fa fa-star fa-fw"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin header-->
+                    <!-- Body -->
+                    <div class="panel-body">
+                        <!-- Question -->
+                        <p>@Html.DisplayFor(modelItem => item.Quest)</p>
+                        <!-- Fin qestion -->
+                        <!-- Réponse simple -->
+                        <pre>@Html.DisplayFor(modelItem => item.Answer)</pre>
+                        <!-- Fin réponse simple-->
+                    </div>
+                    <!-- Fin body -->
+                    <!-- Footer -->
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <!-- Boutons d'actions -->
+                                <a href="#" class="pr-10 text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
+                                    <i class="fa fa-star fa-fw"></i> Noter
+                                </a>
+                                <a href="#" class="pr-10 text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
+                                    <i class="fa fa-comment fa-fw"></i> Commenter
+                                </a>
+                                <a href="#" class="pr-10 text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
+                                    <i class="fa fa-share fa-fw"></i> Partager
+                                </a>
+                                <a href="#" class="pr-10 text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
+                                    <i class="fa fa-plus fa-fw"></i> Ajouter
+                                </a>
+                                <!-- Fin boutons d'action-->
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <!-- Infos sur la question -->
+                                <a href="#" title="Nombre de commentaires" class="pr-10  text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
+                                    @Html.DisplayFor(modelItem => item.NbComment) <i class="fa fa-comments fa-fw"></i>
+                                </a>
+                                <a href="#" title="Nombre d'utilisations de la question" class="pr-10  text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
+                                    @Html.DisplayFor(modelItem => item.NbUsing) <i class="fa fa-thumb-tack fa-fw"></i>
+                                </a>
+                                <a href="#" title="Nombre de notes" class="pr-10  text-@Html.DisplayFor(modelItem => item.Category.ColorTwo)">
+                                    @Html.DisplayFor(modelItem => item.NbNote) <i class="fa fa-group fa-fw"></i>
+                                </a>
+                                <!-- Fin des infos sur la question -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin footer -->
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+
+
+

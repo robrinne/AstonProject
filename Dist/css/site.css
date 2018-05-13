@@ -436,3 +436,19 @@ table.dataTable thead .sorting:after {
 .pt-10 {
     padding-top: 15px
 }
+
+.pr-10 {
+    padding-right: 10px
+}
+
+.pl-10 {
+    padding-left: 10px
+}
+
+.pb-10 {
+    padding-bottom: 15px
+}
+
+.pl-150 {
+    padding-left: 150px
+}

@@ -229,24 +229,24 @@
                             <div class="input-group custom-search-form">
                                 <input type="text" class="form-control" placeholder="Search...">
                                 <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
                             </div>
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="@Url.Action("Index", "Home")"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="@Url.Action("Index", "FilQuest")"><i class="fa fa-navicon fa-fw"></i> Fil de questions</a>
                         </li>
                         <li>
-                            <a href="@Url.Action("Index", "Table")"><i class="fa fa-table fa-fw"></i> Tables</a>
+                            <a href="@Url.Action("Index", "CreateQuestion")"><i class="fa fa-plus fa-fw"></i> Ajouter des questions</a>
                         </li>
                         <li>
-                            <a href="@Url.Action("Index", "Forms")"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                            <a href="@Url.Action("Index", "HistoryQuestion")"><i class="fa fa-th-list fa-fw"></i> Mes questions</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow fa-fw"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="@Url.Action("Index", "Panels")">Panels and Wells</a>
@@ -266,6 +266,15 @@
                                 <li>
                                     <a href="@Url.Action("Index", "Grid")">Grid</a>
                                 </li>
+                                <li>
+                                    <a href="@Url.Action("Index", "Home")">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index", "Table")">Tables</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index", "Forms")">Forms</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
@@ -276,20 +285,8 @@
                                     <a href="#">Second Level Item</a>
                                 </li>
                                 <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
                                     <a href="#">Third Level <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
                                         <li>
                                             <a href="#">Third Level Item</a>
                                         </li>
@@ -298,21 +295,6 @@
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="@Url.Action("Index", "Blank")">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="@Url.Action("Index", "Login")">Login Page</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="@Url.Action("Index", "FilQuest")"><i class="fa fa-navicon"></i> Fil de questions</a>
                         </li>
                     </ul>
                 </div>

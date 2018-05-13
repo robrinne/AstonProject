@@ -72,12 +72,13 @@
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\BlankController.cs" />
     <Compile Include="Controllers\ButtonsController.cs" />
+    <Compile Include="Controllers\CreateQuestionController.cs" />
     <Compile Include="Controllers\FilQuestController.cs" />
     <Compile Include="Controllers\FlotController.cs" />
     <Compile Include="Controllers\FormsController.cs" />
     <Compile Include="Controllers\GridController.cs" />
+    <Compile Include="Controllers\HistoryQuestionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IconsController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -250,7 +251,6 @@
     <None Include="Vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
     <None Include="Vendor\font-awesome\HELP-US-OUT.txt" />
     <None Include="less\.DS_Store" />
-    <Content Include="Views\Blank\Index.cshtml" />
     <Content Include="Views\Buttons\Index.cshtml" />
     <Content Include="Views\Forms\Index.cshtml" />
     <Content Include="Views\Grid\Index.cshtml" />
@@ -260,6 +260,8 @@
     <Content Include="Views\Panels\Index.cshtml" />
     <Content Include="Views\Typography\Index.cshtml" />
     <Content Include="Views\FilQuest\Index.cshtml" />
+    <Content Include="Views\CreateQuestion\Index.cshtml" />
+    <Content Include="Views\HistoryQuestion\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

@@ -74,11 +74,13 @@
   <ItemGroup>
     <Compile Include="Controllers\ButtonsController.cs" />
     <Compile Include="Controllers\CreateQuestionController.cs" />
+    <Compile Include="Controllers\CreateQuestionnaireController.cs" />
     <Compile Include="Controllers\FilQuestController.cs" />
     <Compile Include="Controllers\FlotController.cs" />
     <Compile Include="Controllers\FormsController.cs" />
     <Compile Include="Controllers\GridController.cs" />
     <Compile Include="Controllers\HistoryQuestionController.cs" />
+    <Compile Include="Controllers\HistoryQuestionnaireController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IconsController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -262,6 +264,8 @@
     <Content Include="Views\FilQuest\Index.cshtml" />
     <Content Include="Views\CreateQuestion\Index.cshtml" />
     <Content Include="Views\HistoryQuestion\Index.cshtml" />
+    <Content Include="Views\HistoryQuestionnaire\Index.cshtml" />
+    <Content Include="Views\CreateQuestionnaire\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

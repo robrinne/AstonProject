@@ -1,10 +1,278 @@
 ﻿
 @{
     ViewBag.Title = "Index";
+    var colorPanel = "default"; // primary, default, danger, success, yellow, green, red
+    var colorTab = "pills"; // tabs : onglet blanc / pills : onglet bleu
 }
 
 <div id="page-wrapper">
-    <h2 class="pt-10">Ajouter des questionnaires</h2>
+    
+    <h2 class="pt-10">Ajouter un questionnaire</h2>
+    <div class="row pt-10">
+        <!-- /.col-lg-6 -->
+        <div class="col-lg-12">
+            <!-- Nav tabs -->
+            <ul class="nav nav-@colorTab">
+                <li class="active">
+                    <a href="#simple-question" data-toggle="tab">Question simple</a>
+                </li>
+                <li>
+                    <a href="#multiple-question" data-toggle="tab">Question à choix multiple</a>
+                </li>
+                <li>
+                    <a href="#single-question" data-toggle="tab">Question à choix unique</a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="simple-question">
+                    <!-- .row-->
+                    <div class="row pt-10">
+                        <!-- .col-lg-12 -->
+                        <div class="col-lg-12">
+                            <!-- .panel -->
+                            <div class="panel panel-@colorPanel">
+                                <!-- .panel-body -->
+                                <div class="panel-body">
+                                    <!-- form -->
+                                    <form role="form">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Catégorie*</label>
+                                                    <select class="form-control">
+                                                        <option>Cat 1</option>
+                                                        <option>Cat 2</option>
+                                                        <option>Cat 3</option>
+                                                        <option>Cat 4</option>
+                                                        <option>Cat 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Si autre</label>
+                                                    <input class="form-control" placeholder="Entrez la catégorie de la question">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Question*</label>
+                                                    <textarea class="form-control" placeholder="Ecrivez l'intitulé de votre question" rows="6"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Fichier pour illustrer la question (Taille max: 15Ko)</label>
+                                                    <input type="file">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Réponse*</label>
+                                                    <textarea placeholder="Ecrivez la réponse de la question" class="form-control" rows="6"></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-success">
+                                                    <i class="fa fa-check"></i> Poster la question
+                                                </button>
+                                                <button type="reset" class="btn btn-warning">
+                                                    <i class="fa fa-times"></i> Remettre à zéro
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- /form -->
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                        </div>
+                        <!-- /.col-lg-12 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <div class="tab-pane fade" id="multiple-question">
+                    <!-- .row-->
+                    <div class="row pt-10">
+                        <!-- .col-lg-12 -->
+                        <div class="col-lg-12">
+                            <!-- .panel -->
+                            <div class="panel panel-@colorPanel">
+                                <!-- .panel-body -->
+                                <div class="panel-body">
+                                    <!-- form -->
+                                    <form role="form">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Catégorie*</label>
+                                                    <select class="form-control">
+                                                        <option>Cat 1</option>
+                                                        <option>Cat 2</option>
+                                                        <option>Cat 3</option>
+                                                        <option>Cat 4</option>
+                                                        <option>Cat 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Si autre</label>
+                                                    <input class="form-control" placeholder="Entrez la catégorie de la question">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Question*</label>
+                                                    <textarea class="form-control" placeholder="Ecrivez l'intitulé de votre question" rows="6"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Fichier pour illustrer la question (Taille max: 15Ko)</label>
+                                                    <input type="file">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Réponse*</label>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">
+                                                            <textarea class="form-control" placeholder="Entrez une réponse" rows="1" cols="600"></textarea>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">
+                                                            <textarea class="form-control" placeholder="Entrez une réponse" rows="1" cols="600"></textarea>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">
+                                                            <textarea class="form-control" placeholder="Entrez une réponse" rows="1" cols="600"></textarea>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">
+                                                            <textarea class="form-control" placeholder="Entrez une réponse" rows="1" cols="600"></textarea>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-success">
+                                                    <i class="fa fa-check"></i> Poster la question
+                                                </button>
+                                                <button type="reset" class="btn btn-warning">
+                                                    <i class="fa fa-times"></i> Remettre à zéro
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- /.row (nested) -->
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                        </div>
+                        <!-- /.col-lg-12 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <div class="tab-pane fade" id="single-question">
+                    <!-- .row-->
+                    <div class="row pt-10">
+                        <!-- .col-lg-12 -->
+                        <div class="col-lg-12">
+                            <!-- .panel -->
+                            <div class="panel panel-@colorPanel">
+                                <!-- .panel-body -->
+                                <div class="panel-body">
+                                    <!-- form -->
+                                    <form role="form">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Catégorie*</label>
+                                                    <select class="form-control">
+                                                        <option>Cat 1</option>
+                                                        <option>Cat 2</option>
+                                                        <option>Cat 3</option>
+                                                        <option>Cat 4</option>
+                                                        <option>Cat 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Si autre</label>
+                                                    <input class="form-control" placeholder="Entrez la catégorie de la question">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Question*</label>
+                                                    <textarea class="form-control" placeholder="Ecrivez l'intitulé de votre question" rows="6"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Fichier pour illustrer la question (Taille max: 15Ko)</label>
+                                                    <input type="file">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Réponse*</label>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                                                            <textarea class="form-control" placeholder="Entrez une réponse" rows="1" cols="600"></textarea>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                            <textarea class="form-control" placeholder="Entrez une réponse" rows="1" cols="600"></textarea>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                                            <textarea class="form-control" placeholder="Entrez une réponse" rows="1" cols="600"></textarea>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                                            <textarea class="form-control" placeholder="Entrez une réponse" rows="1" cols="600"></textarea>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-success">
+                                                    <i class="fa fa-check"></i> Poster la question
+                                                </button>
+                                                <button type="reset" class="btn btn-warning">
+                                                    <i class="fa fa-times"></i> Remettre à zéro
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- /.row (nested) -->
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                        </div>
+                        <!-- /.col-lg-12 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+        </div>
+        <!-- /.col-lg-6 -->
+    </div>
 </div>
 
 
